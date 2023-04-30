@@ -1,0 +1,60 @@
+﻿<Page x:Class="МатМоделилование_ПР14.Pages.PageQueueUnlimitedSmall"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:МатМоделилование_ПР14.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageQueueUnlimitedSmall">
+
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="λ" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="μ" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="t" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+        <TextBox x:Name="TextBoxLambda"  Grid.Row="1" Grid.Column="1" Height="30" Width="70" Margin="0 0 20 0" HorizontalAlignment="Right"/>
+        <TextBox x:Name="TextBoxNu"  Grid.Row="2" Grid.Column="1" Height="30" Width="70" Margin="0 0 20 0" HorizontalAlignment="Right"/>
+        <TextBox x:Name="TextBoxT"  Grid.Row="3" Grid.Column="1" Height="30" Width="70" Margin="0 0 20 0" HorizontalAlignment="Right"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="A" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Grid.Column="2" Text="Q" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+        <TextBox x:Name="TextBoxA"  Grid.Row="1" Grid.Column="2" Height="30" Width="70" Margin="0 0 20 0" HorizontalAlignment="Right"/>
+        <TextBox x:Name="TextBoxQ"  Grid.Row="2" Grid.Column="2" Height="30" Width="70" Margin="0 0 20 0" HorizontalAlignment="Right"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="3" Text="Lоч" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Grid.Column="3" Text="Lоб" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="3" Grid.Column="3" Text="Lст" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+        <TextBox x:Name="TextBoxLоч"  Grid.Row="1" Grid.Column="3" Height="30" Width="70" Margin="0 0 20 0" HorizontalAlignment="Right"/>
+        <TextBox x:Name="TextBoxLоб"  Grid.Row="2" Grid.Column="3" Height="30" Width="70" Margin="0 0 20 0" HorizontalAlignment="Right"/>
+        <TextBox x:Name="TextBoxLст"  Grid.Row="3" Grid.Column="3" Height="30" Width="70" Margin="0 0 20 0" HorizontalAlignment="Right"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="4" Text="Tоч" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Grid.Column="4" Text="Tст" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+        <TextBox x:Name="TextBoxTоч"  Grid.Row="1" Grid.Column="4" Height="30" Width="70" Margin="0 0 20 0" HorizontalAlignment="Right"/>
+        <TextBox x:Name="TextBoxTст"  Grid.Row="2" Grid.Column="4" Height="30" Width="70" Margin="0 0 20 0" HorizontalAlignment="Right"/>
+
+
+        <Button x:Name="ButtonRes" Grid.ColumnSpan="6" Grid.Row="4" Height="40" Width="150" Content="Расчитать" Click="ButtonRes_Click"/>
+
+    </Grid>
+</Page>
